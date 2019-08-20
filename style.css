@@ -103,6 +103,9 @@
     text-align: left;
 }
 
+.custom-table td{ 
+    padding-left:0;
+}
 .switch-table tr td:nth-child(2) {
 
     font-weight: bold;
