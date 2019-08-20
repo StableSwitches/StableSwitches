@@ -1,2 +1,2 @@
-# StablesSwitches
-A site for StablesSwitches
+# StableSwitches
+A website for StableSwitches

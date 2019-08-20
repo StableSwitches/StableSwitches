@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-cont {
+    padding-top: 100px;
+}
+
+.navbar-custom {
+    background-color: #5e0083;
+}
+
+.custom-footer {
+    background-color: #5e0083;
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    font-weight: 700;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+    .footer-desktop {
+        display: none;
+    }
+
+    .footer-mobile {
+        display: block;
+    }
+}
+
+.jumbotron {
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbo-title {
+    padding-bottom: 20px;
+}
+
+.home-title:link {
+    text-decoration: none;
+}
+
+.jumbotron a {
+    color:black;
+    font-weight: 600;
+}
+
+.info-top {
+    padding-top: 20px;
+}
+
+.full-switch-info {
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.switch-image {
+    width: 150px;
+    height: 150px;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.switch-graph {
+    width: 40%;
+    height: 40%;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.switch-info {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchSwitch {
+    width: 50%;
+    margin-top: 5px;
+}
