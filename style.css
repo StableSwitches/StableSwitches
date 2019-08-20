@@ -117,6 +117,10 @@ hr {
     font-weight: bold;
 }
 
+.custom-button, .custom-button:hover, .custom-button:active, .custom-button:visited {
+    background-color: #530083;
+}
+
 
 @media screen and (max-width:991px) {
     .switch-info {
