@@ -27,6 +27,12 @@
     display: none;
 }
 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(255, 255, 255, 1);
+  }
 
 @media screen and (max-width:768px) {
     .footer-desktop {
