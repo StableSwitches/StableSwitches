@@ -193,3 +193,8 @@ hr {
 .textarea-custom {
     height: 190px !important;
 }
+
+.form-control:focus {
+    border-color: #50026e !important;
+    box-shadow: inset 0 0px 0px #4f026e80, 0 0 8px #891fb36e !important;
+  }
