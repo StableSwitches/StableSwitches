@@ -191,5 +191,5 @@ hr {
 }
 
 .textarea-custom {
-    height: 190px;
+    height: 190px !important;
 }
