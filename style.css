@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
 }
@@ -117,11 +118,6 @@ hr {
     font-weight: bold;
 }
 
-.custom-button, .custom-button:hover, .custom-button:active, .custom-button:visited {
-    background-color: #530083;
-}
-
-
 @media screen and (max-width:991px) {
     .switch-info {
         text-align: center;
@@ -163,4 +159,37 @@ hr {
     .switch-table {
         margin-left: 80px;
     }
+}
+
+
+/*CUSTOM BUTTON*/
+
+.btn-primary {
+    color:#fff;
+    background-color:#5e0083;
+    border-color:#5e0083;
+}
+
+.btn-primary:hover { 
+    color:#fff;
+    background-color:#50026e;
+    border-color:#50026e;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow:0 0 0 .2rem #9C62B3;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle {
+    color:#fff;
+    background-color:#50026e;
+    border-color:#50026e;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow:0 0 0 .2rem #5e0083;
+}
+
+.textarea-custom {
+    padding-bottom: 45px;
 }
