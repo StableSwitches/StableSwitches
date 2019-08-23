@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../style.css">
-    <script src="app.js"></script>
+    <script src="backup.js"></script>
     <link rel="icon" href="../favicon.svg" type="image/x-icon" />
     <title>StableSwitches - Specification</title>
 </head>
@@ -65,29 +65,12 @@
     <div class="container top-cont">
         <div class="jumbotron">
             <div class="top-bar row">
-                <h1 class="jumbo-title">Specification</h1>
-                <div class="custom-buttons">
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                          Brand
-                        </button>
-                        <div class="dropdown-custom dropdown-menu">
-                          <a class="dropdown-item" href="#">Cherry</a>
-                          <a class="dropdown-item" href="#">Gateron</a>
-                          <a class="dropdown-item" href="#">Kailh</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                          Type
-                        </button>
-                        <div class="dropdown-custom dropdown-menu">
-                          <a class="dropdown-item" href="#">Clicky</a>
-                          <a class="dropdown-item" href="#">Tactile</a>
-                          <a class="dropdown-item" href="#">Linear</a>
-                        </div>
-                    </div>
+                <h1 class="jumbo-title col-md-6">Specification</h1>
+                <div class="input-group col-md-6">
                     <input type="text" id="searchInput" onkeyup="searchFunc(); keyboardEnter();" class="searchSwitch form-control" id="basic-addon1" placeholder="Search...">
+                    <div class="input group-append">
+                        <button onclick="clearSearch()" type="submit" class="btn btn-primary btn-margin">Clear</button>
+                    </div>
                 </div>
             </div>    
             <p>Here you will find the full specification for popular switches.</p>
@@ -97,33 +80,36 @@
                     <h3 class="switch-title">Cherry MX Blue</h3>
                     <div class="full-switch-info row">
                         <div class="col-lg-3 text-center">
-                            <img class="switch-image" src="../assets/cherry/Cherry_MX_Blue.png" alt="Cherry MX Blue Switch">
+                            <img class="switch-image" src="../assets/cherry/Cherry_MX_Blue.png" alt="Cherry MX Brown Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless w-100 d-block d-md-table switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Cherry</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Clicky & Tactile</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">50g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2.2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">65g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Tactile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>45g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>60g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Blue_Graph.jpg" alt="Cherry MX Brown Force Graph">
                         </div>
                     </div>
                 </div>
@@ -134,31 +120,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/cherry/Cherry_MX_Brown.png" alt="Cherry MX Brown Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Cherry</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Tactile</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">45g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">60g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Tactile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>45g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>60g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Brown_Graph.jpg" alt="Cherry MX Brown Force Graph">
                         </div>
                     </div>
                 </div>
@@ -169,31 +158,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/cherry/Cherry_MX_Red.png" alt="Cherry MX Red Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Cherry</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Linear</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">45g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">60g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                                <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Linear</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>45g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>60g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Red_Graph.png" alt="Cherry MX Red Force Graph">
                         </div>
                     </div>
                 </div>
@@ -204,31 +196,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/cherry/Cherry_MX_Clear.png" alt="Cherry MX Clear Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Cherry</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Clicky & Tactile</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">65g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">90g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Tactile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>65g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>90g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Cherry MX Clear Force Graph">
                         </div>
                     </div>
                 </div>
@@ -239,31 +234,34 @@
                             <div class="col-lg-3 text-center">
                                 <img class="switch-image" src="../assets/cherry/Cherry_MX_Green.png" alt="Cherry MX Green Switch">
                             </div>
-                            <div class="switch-info col-lg-9">
-                                <table class="table table-borderless switch-table table-responsive">
-                                    <col width="25%">
-                                    <col width="25%">
-                                    <col width="25%">
-                                    <col width="25%">
-                                    <tr>
-                                        <td bgcolor="#e3e6e8">Brand</td>
-                                        <td bgcolor="#e3e6e8">Cherry</td>
-                                        <td bgcolor="#dcdfe0">Bottom Out</td>
-                                        <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#dcdfe0">Switch Type</td>
-                                        <td bgcolor="#dcdfe0" class="type">Clicky & Tactile</td>
-                                        <td bgcolor="#e3e6e8">Actuation Force</td>
-                                        <td bgcolor="#e3e6e8" class="ac-force">80g</td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#e3e6e8">Actuation Point</td>
-                                        <td bgcolor="#e3e6e8" class="ac-point">2.2mm</td>
-                                        <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                        <td bgcolor="#dcdfe0" class="bo-force">90g</td>
-                                    </tr>
-                                </table>
+                            <div class="switch-info col-lg-5">
+                                <table class="table table-borderless switch-table">
+                                        <col width="50%">
+                                        <col width="50%">
+                                        <tr>
+                                            <td>Switch Type</td>
+                                            <td>Clicky & Tactile</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actuation Point</td>
+                                            <td>2.2mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bottom Out</td>
+                                            <td>4mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actuation Force</td>
+                                            <td>80g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bottom-Out Force</td>
+                                            <td>90g</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                            <div class="col-lg-4 img-center">
+                                <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Cherry MX Green Force Graph">
                             </div>
                         </div>
                     </div>
@@ -274,31 +272,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/gateron/Gateron_Blue.png" alt="Gateron Blue Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Gateron</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Clicky & Tactile</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">55g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2.2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">65g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Clicky & Tactile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2.2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>55g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>60g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Gateron Blue Force Graph">
                         </div>
                     </div>
                 </div>
@@ -309,31 +310,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/gateron/Gateron_Brown.png" alt="Gateron Brown Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Gateron</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Tactile</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">45g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2.2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">55g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Clicky & Tactile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2.2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>45g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>55g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Gateron Brown Force Graph">
                         </div>
                     </div>
                 </div>
@@ -345,31 +349,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/gateron/Gateron_Red.png" alt="Gateron Red Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Gateron</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Linear</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">45g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">60g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Linear</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>45g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>60g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Gateron Red Force Graph">
                         </div>
                     </div>
                 </div>
@@ -380,31 +387,34 @@
                         <div class="col-lg-3 text-center">
                             <img class="switch-image" src="../assets/gateron/Gateron_Clear.png" alt="Gateron Clear Switch">
                         </div>
-                        <div class="switch-info col-lg-9">
-                            <table class="table table-borderless switch-table table-responsive">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <col width="25%">
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Brand</td>
-                                    <td bgcolor="#e3e6e8">Gateron</td>
-                                    <td bgcolor="#dcdfe0">Bottom Out</td>
-                                    <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#dcdfe0">Switch Type</td>
-                                    <td bgcolor="#dcdfe0" class="type">Linear</td>
-                                    <td bgcolor="#e3e6e8">Actuation Force</td>
-                                    <td bgcolor="#e3e6e8" class="ac-force">35g</td>
-                                </tr>
-                                <tr>
-                                    <td bgcolor="#e3e6e8">Actuation Point</td>
-                                    <td bgcolor="#e3e6e8" class="ac-point">2mm</td>
-                                    <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                    <td bgcolor="#dcdfe0" class="bo-force">55g</td>
-                                </tr>
-                            </table>
+                        <div class="switch-info col-lg-5">
+                            <table class="table table-borderless switch-table">
+                                    <col width="50%">
+                                    <col width="50%">
+                                    <tr>
+                                        <td>Switch Type</td>
+                                        <td>Linear</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Point</td>
+                                        <td>2mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom Out</td>
+                                        <td>4mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actuation Force</td>
+                                        <td>35g</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bottom-Out Force</td>
+                                        <td>55g</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <div class="col-lg-4 img-center">
+                            <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Gateron Clear Force Graph">
                         </div>
                     </div>
                 </div>
@@ -415,31 +425,34 @@
                             <div class="col-lg-3 text-center">
                                 <img class="switch-image" src="../assets/gateron/Gateron_Green.png" alt="Gateron Green Switch">
                             </div>
-                            <div class="switch-info col-lg-9">
-                                <table class="table table-borderless switch-table table-responsive">
-                                    <col width="25%">
-                                    <col width="25%">
-                                    <col width="25%">
-                                    <col width="25%">
-                                    <tr>
-                                        <td bgcolor="#e3e6e8">Brand</td>
-                                        <td bgcolor="#e3e6e8">Gateron</td>
-                                        <td bgcolor="#dcdfe0">Bottom Out</td>
-                                        <td bgcolor="#dcdfe0" class="bottom-out">4mm</td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#dcdfe0">Switch Type</td>
-                                        <td bgcolor="#dcdfe0" class="type">Clicky & Tactile</td>
-                                        <td bgcolor="#e3e6e8">Actuation Force</td>
-                                        <td bgcolor="#e3e6e8" class="ac-force">80g</td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#e3e6e8">Actuation Point</td>
-                                        <td bgcolor="#e3e6e8" class="ac-point">2mm</td>
-                                        <td bgcolor="#dcdfe0">Bottom-Out Force</td>
-                                        <td bgcolor="#dcdfe0" class="bo-force">90g</td>
-                                    </tr>
-                                </table>
+                            <div class="switch-info col-lg-5">
+                                <table class="table table-borderless switch-table">
+                                        <col width="50%">
+                                        <col width="50%">
+                                        <tr>
+                                            <td>Switch Type</td>
+                                            <td>Clicky & Tactile</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actuation Point</td>
+                                            <td>2mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bottom Out</td>
+                                            <td>4mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Actuation Force</td>
+                                            <td>80g</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bottom-Out Force</td>
+                                            <td>90g</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                            <div class="col-lg-4 img-center">
+                                <img class="switch-graph" src="../assets/Cherry_MX_Clear_Graph.jpg" alt="Gateron Green Force Graph">
                             </div>
                         </div>
                     </div>

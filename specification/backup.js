@@ -4,14 +4,16 @@ function searchFunc() {
     filter = input.value.toUpperCase();
     maindiv = document.getElementById("switch-container");
     switches = maindiv.getElementsByTagName("div");
-    for (i = 0; i < switches.length; i+=4) {
+    for (i = 0; i < switches.length; i+=5) {
         console.log(i);
-        var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
-        console.log(title);
         /*
+        if(i > 5) {
+            i = i + 1;
+        }
+        */
+        var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
         var stats = switches[i].getElementsByTagName("table")[0];
         var switchtype = stats.getElementsByTagName("tr");
-        */
         if (title.toUpperCase().indexOf(filter) > -1) {
             switches[i].style.display = "";
         } else {
