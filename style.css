@@ -227,10 +227,6 @@ hr {
     padding:10px !important;
 }
 
-.jumbo-title {
-    padding-left: 1vw;
-}
-
 .mobile-specs {
     display:none;
 }
@@ -238,4 +234,9 @@ hr {
     .searchSwitch {
         width: 32vw;
     }
+}
+
+.top-bar {
+    padding-left: 0;
+    margin-left: 0;
 }
