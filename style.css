@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+h3 {
+    font-size: 1.5rem !important;
+}
 
 .navbar-brand {
     font-family: 'Poppins', sans-serif;
@@ -49,9 +52,6 @@ hr {
     font-family: 'Poppins', sans-serif;
 }
 
-.jumbo-title {
-    padding-bottom: 20px;
-}
 
 .home-title:link {
     text-decoration: none;
@@ -73,15 +73,16 @@ hr {
 }
 
 .searchSwitch {
-    width: 50%;
-    margin-top: 5px;
+    width: 25vw;
+    margin-left: 1vw;
+    margin-top: 10px;
 }
 
 .switch-image {
     width: 150px;
     height: 150px;
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .switch-info {
@@ -103,17 +104,25 @@ hr {
 }
 
 .full-switch-info {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .switch-table {
     text-align: left;
 }
 
+.btn-margin {
+    margin-top:5px;
+}
+
 .custom-table td{ 
     padding-left:0;
 }
 .switch-table tr td:nth-child(2) {
+
+    font-weight: bold;
+}
+.switch-table tr td:nth-child(4) {
 
     font-weight: bold;
 }
@@ -135,29 +144,24 @@ hr {
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 20px;
+        
+    }
+
+    .top-bar {
+        padding-bottom: 15px;
+    }
+    .btn-margin {
+        margin-top:0px;
     }
 
     .searchSwitch {
-        width:94%;
-        margin: 0 auto;
-        margin-bottom: 30px;
+        width: 15vw;
     }
-
-    .switch-table {
-        margin-left: 8%;
-    }
-
 
 }
 @media screen and (max-width:310px) {
     * {
         display:none;
-    }
-}
-
-@media screen and (max-width:990px) and (min-width:768px) {
-    .switch-table {
-        margin-left: 80px;
     }
 }
 
@@ -198,3 +202,40 @@ hr {
     border-color: #50026e !important;
     box-shadow: inset 0 0px 0px #4f026e80, 0 0 8px #891fb36e !important;
   }
+
+  @media screen and (max-width:440px) {
+
+    table {
+        display: none;
+    }
+    .mobile-specs {
+        display: block;
+    }
+}
+
+.dropdown-custom a {
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-buttons {
+    text-align: center;
+    display: flex;
+}
+
+.dropdown {
+    padding:10px !important;
+}
+
+.jumbo-title {
+    padding-left: 1vw;
+}
+
+.mobile-specs {
+    display:none;
+}
+@media screen and (max-width:838px) {
+    .searchSwitch {
+        width: 32vw;
+    }
+}
