@@ -72,9 +72,11 @@
                           Brand
                         </button>
                         <div class="dropdown-custom dropdown-menu">
-                          <a class="dropdown-item" href="#">Cherry</a>
-                          <a class="dropdown-item" href="#">Gateron</a>
-                          <a class="dropdown-item" href="#">Kailh</a>
+                            <button onclick="filterCherry()" class="dropdown-item" type="button">Cherry</button>
+                            <button onclick="filterGateron()" class="dropdown-item" type="button">Gateron</button>
+                            <button onclick="filterKailh()" class="dropdown-item" type="button">Kailh</button>
+                            <div class="dropdown-divider"></div>
+                            <button onclick="clearSearch()" class="dropdown-item" type="button">Clear</button>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -82,9 +84,11 @@
                           Type
                         </button>
                         <div class="dropdown-custom dropdown-menu">
-                          <a class="dropdown-item" href="#">Clicky</a>
-                          <a class="dropdown-item" href="#">Tactile</a>
-                          <a class="dropdown-item" href="#">Linear</a>
+                            <button class="dropdown-item" type="button">Clicky</button>
+                            <button class="dropdown-item" type="button">Tactile</button>
+                            <button class="dropdown-item" type="button">Linear</button>
+                            <div class="dropdown-divider"></div>
+                            <button onclick="clearSearch()" class="dropdown-item" type="button">Clear</button>
                         </div>
                     </div>
                     <input type="text" id="searchInput" onkeyup="searchFunc(); keyboardEnter();" class="searchSwitch form-control" id="basic-addon1" placeholder="Search...">
@@ -564,7 +568,7 @@
                                 </tr>
                                 <tr>
                                     <td>Actuation Point</td>
-                                    <td>1.8mm</td>
+                                    <td>1.8</td>
                                 </tr>
                             </table>
                         </div>

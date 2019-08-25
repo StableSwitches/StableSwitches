@@ -5,15 +5,30 @@ function searchFunc() {
     maindiv = document.getElementById("switch-container");
     switches = maindiv.getElementsByTagName("div");
     for (i = 0; i < switches.length; i+=5) {
-        console.log(i);
         var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
-        console.log(title);
         /*
-        var stats = switches[i].getElementsByTagName("table")[0];
-        var switchtype = stats.getElementsByTagName("tr");
-        */
-        if (title.toUpperCase().indexOf(filter) > -1) {
+        if (filter == "") {
             switches[i].style.display = "";
+        } else {
+            if (title.toUpperCase().indexOf(filter) > -1) {
+                BACKUP WORKING
+                switches[i].style.display = "";
+            } else {
+                switches[i].style.display = "none";
+            }
+            
+                if (switches[i].style.display = "none") {
+                    switches[i].style.display = "none";
+                } else {
+                    switches[i].style.display = "";
+                } 
+            } else {
+                switches[i].style.display = "none";
+            }
+        }
+        */
+       if (title.toUpperCase().indexOf(filter) > -1) {
+        switches[i].style.display = "";
         } else {
             switches[i].style.display = "none";
         }
@@ -39,4 +54,47 @@ function keyboardEnter() {
             input.blur();
         }
     });
+}
+
+function filterCherry() {
+    var filter, maindiv, switches;
+    filter = "CHERRY";
+    maindiv = document.getElementById("switch-container");
+    switches = maindiv.getElementsByTagName("div");
+    for (i = 0; i < switches.length; i+=5) {
+        var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
+        if (title.toUpperCase().indexOf(filter) > -1) {
+            switches[i].style.display = "";
+        } else {
+            switches[i].style.display = "none";
+        }
+    }
+}
+function filterGateron() {
+    var filter, maindiv, switches;
+    filter = "GATERON";
+    maindiv = document.getElementById("switch-container");
+    switches = maindiv.getElementsByTagName("div");
+    for (i = 0; i < switches.length; i+=5) {
+        var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
+        if (title.toUpperCase().indexOf(filter) > -1) {
+            switches[i].style.display = "";
+        } else {
+            switches[i].style.display = "none";
+        }
+    }
+}
+function filterKailh() {
+    var filter, maindiv, switches;
+    filter = "KAILH";
+    maindiv = document.getElementById("switch-container");
+    switches = maindiv.getElementsByTagName("div");
+    for (i = 0; i < switches.length; i+=5) {
+        var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
+        if (title.toUpperCase().indexOf(filter) > -1) {
+            switches[i].style.display = "";
+        } else {
+            switches[i].style.display = "none";
+        }
+    }
 }
