@@ -4,7 +4,7 @@ function searchFunc() {
     filter = input.value.toUpperCase();
     maindiv = document.getElementById("switch-container");
     switches = maindiv.getElementsByTagName("div");
-    for (i = 0; i < switches.length; i+=5) {
+    for (i = 0; i < switches.length; i+=4) {
         console.log(i);
         var title = switches[i].getElementsByTagName("h3")[0].innerHTML;
         console.log(title);

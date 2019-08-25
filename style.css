@@ -240,3 +240,7 @@ hr {
     padding-left: 0;
     margin-left: 0;
 }
+
+.switch-table {
+    margin-bottom: 0 !important
+}
